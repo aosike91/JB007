@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url(/src/fonts/DMSans-Regular.ttf) format(truetype); /* Asegúrate de que esta ruta sea correcta */
+}
+
+.exhibiciones-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centra los cuadros en cada fila */
+    margin-bottom: 20px; /* Espaciado entre filas */
+}
+
+.box {
+    position: relative; /* Asegúrate de que la caja sea el contenedor relativo */
+    width: 250px; /* Aumentar el ancho del cuadro */
+    height: 280px; /* Aumentar la altura del cuadro */
+    margin-left: 10px;
+    margin-bottom: -12px;
+    border: 2px solid #ccc; /* Bordes para visualizar mejor los cuadros */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido dentro del cuadro */
+    cursor: pointer;
+    overflow: hidden; /* Evita que el pseudo-elemento sobresalga */
+    transition: transform 0.2s; /* Añadir efecto de transformación */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Efecto al pasar el ratón */
+}
+
+.circle {
+    width: 120px; /* Aumentar el tamaño del círculo */
+    height: 120px; /* Aumentar el tamaño del círculo */
+    border-radius: 50%;
+    overflow: hidden; /* Asegurar que la imagen no sobresalga */
+    margin-bottom: 10px; /* Espaciado entre círculo y texto */
+    display: flex;
+    justify-content: center; /* Centrar imagen en el círculo */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.circle img {
+    width: 100%; /* Ajustar imagen al tamaño del círculo */
+    height: 100%; /* Hacer la imagen ocupar todo el círculo */
+    object-fit: cover; /* Asegurar que la imagen se ajuste sin cortarse */
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    border-radius: 10px; /* Mantiene la forma del cuadro */
+    background: rgba(253, 164, 0, 0.171); /* Color de fondo con opacidad */
+    width: 100%;
+    height: 100%;
+    top: 0; /* Alineación al top */
+    left: 0; /* Alineación al left */
+    transform: scale(0); /* Comienza escalado a 0 */
+    opacity: 0; /* Comienza invisible */
+    transition: transform 0.6s ease, opacity 0.6s ease; /* Suaviza la animación */
+    z-index: 1; /* Asegúrate de que esté detrás del contenido */
+}
+
+/* Efecto al pasar el mouse por encima */
+.box:hover::before {
+    transform: scale(1); /* Aumenta el tamaño del cuadro */
+    opacity: 1; /* Hace el cuadro visible */
+}
+
+.text {
+    font-size: 16px; /* Aumentar el tamaño de la fuente del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 0 10px; /* Espaciado horizontal */
+    font-family: DM Sans, sans-serif;
+    color: white;
+    z-index: 2; /* Asegúrate de que el texto esté por encima del pseudo-elemento */
+    position: relative; /* Para que el z-index tenga efecto */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.ex-button, .arrow-button {
+    margin: 0 5px; /* Espaciado entre botones */
+    padding: 10px 15px; /* Aumentar el tamaño de los botones */
+    font-size: 16px; /* Aumentar el tamaño de la fuente de los botones */
+    cursor: pointer;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegúrate de que el modal esté por encima de todo */
+    opacity: 0; /* Comienza invisible */
+    visibility: hidden; /* Comienza como invisible */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transición de opacidad y visibilidad */
+}
+
+.modal.show { /* Clase que se aplicará cuando se muestre el modal */
+    opacity: 1; /* Totalmente visible */
+    visibility: visible; /* Hacer visible el modal */
+}
+
+.modal-image {
+    max-width: 80%; /* Aumentar el tamaño máximo de la imagen */
+    max-height: 80%; /* Aumentar el tamaño máximo de la imagen */
+    z-index: 1001; /* Asegúrate de que la imagen esté por encima del fondo del modal */
+    position: relative; /* Para que el z-index tenga efecto */
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 0.5s ease; /* Transición de opacidad */
+}
+
+.modal-image.show { /* Clase que se aplicará cuando se muestre la imagen */
+    opacity: 1; /* Totalmente visible */
+}
+
+.volver-button-ex {
+    position: absolute;
+    bottom: 20px; /* Espacio desde la parte inferior */
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: -10px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.regresar-button-ex{
+    bottom: 20px; /* Espacio desde la parte inferior */
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    margin-left: -1200px;
+    cursor: pointer;
+}
