@@ -3,7 +3,6 @@
   src: url('/src/fonts/007\ GoldenEye.ttf') format('truetype'); /* Asegúrate de que esta ruta sea correcta */
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +10,7 @@ body {
   background-color: black;
   color: black;
   text-align: center;
+  margin-top: -24px;
 }
 
 /* Estilos generales que se aplicarán a todas las páginas */

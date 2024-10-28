@@ -12,7 +12,7 @@ import Exhibiciones3 from './components/Exhibiciones3';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/JB007">
       <Routes>
         <Route path="/" element={<PrimeraPagina />} />
         <Route path="/segunda" element={<SegundaPagina />} />

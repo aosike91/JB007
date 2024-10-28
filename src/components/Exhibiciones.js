@@ -13,7 +13,7 @@ const Exhibiciones = () => {
         setTimeout(() => {
             const imgElement = document.querySelector('.modal-image');
             if (imgElement) {
-                imgElement.classList.add('show'); // Añadir clase para hacer visible la imagen
+                imgElement.classList.add('show'); 
             }
         }, 30); // Esperar un breve momento para asegurar que la imagen esté cargada
     };
@@ -103,10 +103,12 @@ const Exhibiciones = () => {
                     PLAY JAMES BOND * PINBALL MACHINE  1980 IN JAMES BOND 007 MUSEUM NYBRO SWEDEN</div>
                 </div>
             </div>
+
             <div className="pagination">
                 <button onClick={goToPage2} className="ex-button">2</button>
                 <button onClick={goToPage3} className="ex-button">3</button>
                 <button onClick={goToPage2} className="arrow-button">→</button>
+
             </div>
 
             {showImage && (

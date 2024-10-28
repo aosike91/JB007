@@ -16,7 +16,7 @@ nav {
 .nav-container {
   display: flex;
   align-items: center; /* Alinea verticalmente */
-  margin-top: -2px; /* Ajusta el margen superior si es necesario */
+  margin-top: 24px; /* Ajusta el margen superior si es necesario */
   
 }
 .nav-container :hover {
@@ -49,15 +49,15 @@ nav ul {
   justify-content: flex-start;
   list-style: none;
   padding: 10px;
-  margin: 0;
   background-color: white;
   text-decoration: none !important;
+  margin-top: 0px;
  
 }
 
 nav ul li {
   flex: 1;
-  padding: 10px 20px;
+  padding: 20px 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@ nav ul li:last-child {
 .nav-icon {
   width: 20px;
   height: 20px;
-  margin-bottom: -5px;
+  margin-bottom: -3px;
   margin-right: 8px;
 }
 
