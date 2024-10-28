@@ -5,7 +5,7 @@
   const PrimeraPagina = () => {
     const navigate = useNavigate();
     const backgroundStyle = {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/JAMESBOND.jpg)`, // Ruta a la imagen
+      backgroundImage: `url(${process.env.PUBLIC_URL}/JAMESBOND.jpg)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

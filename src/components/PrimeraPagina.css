@@ -1,6 +1,6 @@
 @font-face {
   font-family: '007 GoldenEye';
-  src: url('/src/fonts/007\ GoldenEye.ttf') format('truetype'); /* Asegúrate de que esta ruta sea correcta */
+  src: url('/src/fonts/007\ GoldenEye.ttf') format('truetype'); 
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   margin-top: -24px;
 }
 
-/* Estilos generales que se aplicarán a todas las páginas */
+
 .header h3 {
   padding-top: 20px;
   font-size: 1.5em;
@@ -22,24 +22,24 @@ body {
 }
 
 .content {
-  display: flex; /* Usar flexbox */
-  flex-direction: column; /* Apilar elementos en columna */
-  align-items: flex-start; /* Alinear elementos al inicio (izquierda) */
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
   position: relative;
   top: 40%;
   transform: translateY(-50%);
-  margin-left: 0; /* Sin margen izquierdo para mantener la imagen en su lugar */
+  margin-left: 0; 
 }
 
 h1 {
   font-size: 3em;
-  margin-bottom: 10px; /* Reduce el margen inferior si es necesario */
-  margin-left: 50px; /* Mover el título a la derecha */
+  margin-bottom: 10px; 
+  margin-left: 50px; 
 }
 
 p {
-  margin-left: 150px; /* Mover el párrafo a la derecha */
-  margin-bottom: 0px; /* Espacio inferior para separación */
+  margin-left: 150px; 
+  margin-bottom: 0px; 
 }
 
 
@@ -52,8 +52,8 @@ button {
   border: none;
   border-radius: 100px;
   cursor: pointer;
-  margin-top: 20px; /* Espacio adicional encima del botón */
-  margin-left: 325px; /* Mover el botón a la derecha */
+  margin-top: 20px; 
+  margin-left: 325px; 
   transition: background-color 0.3s;
 }
 
