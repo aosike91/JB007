@@ -1,5 +1,6 @@
 
 import React from 'react';
+import './LineaT.css';
 
 
 
@@ -8,6 +9,10 @@ const LineaT = () => {
     <div>
       {/* Tu contenido aquí */}
       <h1>Contenido de LineaT</h1>
+      <div className="loader">
+        <div className="loader_cube loader_cube--glowing"></div>
+        <div className="loader_cube loader_cube--color"></div>
+    </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const SegundaPagina = () => {
     <div className={`second-page ${mapaVisible ? 'borroso' : ''}`}> {/* Aplicar clase borroso solo si el mapa está visible */}
       <div className="nav-container">
         <div className="left-image">
-          <img src={`${process.env.PUBLIC_URL}/OjoJB.webp `}alt="Ojo de James Bond" className="ojo-jb" />
+          <img src="/OjoJB.webp" alt="Ojo de James Bond" className="ojo-jb" />
         </div>
         <nav className="right-nav">
           <ul>
@@ -52,7 +52,7 @@ const SegundaPagina = () => {
       <div className="main-content">
         <div className="left">
           <h2>Aventúrate en esta experiencia redescubriendo la saga de James Bond</h2>
-          <button onClick={() => Navigate('./LineaT')} className="timeline-button1">Línea de tiempo</button>
+          <button onClick={() => Navigate('./LineaT')} className="btn2">Línea de tiempo</button>
         </div>
         <div className="right">
           <img src={`${process.env.PUBLIC_URL}/Carrosegunda.jpg `} alt="Imagen 3" className="imagen3" />
