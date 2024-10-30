@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'DM Sans';
-  src:url(/src/fonts/DMSans-Regular.ttf)  format(truetype);/* Asegúrate de que esta ruta sea correcta */
+  src:url(/src/fonts/DMSans-Regular.ttf)  format(truetype);
 }
 .second-page {
   font-family: Arial, sans-serif;
 }
 nav {
   display: flex;
-  justify-content: flex-start; /* Alinea los elementos al inicio */
-  align-items: stretch; /* Asegura que todos los elementos cubran el alto */
+  justify-content: flex-start; 
+  align-items: stretch; 
   background-color: white;
-  height: 65px; /* Ajusta este valor según la altura de la barra de navegación */
+  height: 65px; 
   text-decoration: none;
 }
 .nav-container {
@@ -25,22 +25,22 @@ nav {
 }
 
 .custom-link {
-  text-decoration: none; /* Quita el subrayado */
-  color: inherit; /* O define un color específico */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .custom-link:hover {
-  color: black /* el color que desees para el hover */;
+  color: black 
 }
 
 
 .ojo-jb {
-  width: 158px; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 158px; 
   height: auto;
 }
 
 .right-nav {
-  flex-grow: 1; /* La barra de navegación tomará el resto del espacio disponible */
+  flex-grow: 1; 
 }
 
 nav ul {
