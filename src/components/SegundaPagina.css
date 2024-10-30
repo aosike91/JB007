@@ -12,6 +12,8 @@ nav {
   background-color: white;
   height: 65px; 
   text-decoration: none;
+
+  
 }
 .nav-container {
   display: flex;
