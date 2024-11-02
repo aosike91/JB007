@@ -111,18 +111,16 @@ nav ul li:hover {
   max-width: 410px;
   text-align: left;
   word-wrap: break-word;
+  
 }
 
-.right {
-  flex: 1;
-  text-align: center;
-}
 
 .imagen3 {
-  width: 100%;
-  height: auto;
+ 
+width: 100%;
+height: auto;
   margin-top: 20px;
-  animation: cubic-bezier(1,1,0,9);
+  animation: deslizarIzquierda 0.8s,ease-out forwards;
 }
 
 .btn2 {
@@ -142,7 +140,10 @@ nav ul li:hover {
   font-family: DM Sans, sans-serif;
   text-transform: uppercase;
   color: var(--color);
-  margin-left: 0px;
+  margin-left: 200px;
+  margin-top: 300px;
+  animation: deslizarDerecha .8s ease-out;
+
  }
 
 .btn2::after, .btn2::before {
@@ -182,10 +183,14 @@ nav ul li:hover {
   transform: scale(.98);
  }
 
-
+.q-container{
+  animation: deslizarIzquierda 0.8s,ease-out forwards;
+}
 q {
   color: white;
-  margin-left: 299px;
+  margin-left: 400px;
+  animation: deslizarIzquierda 0.8s,ease-out forwards;
+  
 }
 .volver-icon{
   width: 24px;
@@ -235,4 +240,41 @@ q {
 
 .volver-boton:hover {
   background-color: #ddd;
+}
+
+@keyframes deslizarDerecha {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity:1;
+  }
+}
+@keyframes deslizarIzquierda {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0%);
+    opacity:1;
+  }
+}
+
+.texto-deslizante {
+  white-space: normal;
+  overflow: hidden;
+  position: fixed;
+  animation: deslizarDerecha .8s ease-out;
+  max-width: 20%;
+  max-height: 100%;
+  text-align: left;
+  margin-left: 150px;
+  top: 150px;
+  color: white;
+  font-family: DM Sans, sans-serif;
+  text-wrap: break-word;
+  font-size: 20px;
 }

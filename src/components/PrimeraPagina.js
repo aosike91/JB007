@@ -9,7 +9,7 @@
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      height: '100vh', // Asegúrate de que ocupe toda la altura
+      height: '100vh', 
       color: 'white',
       textAlign: 'center',
     };
@@ -20,12 +20,14 @@
           <h3>MUSEO EXCLUSIVO</h3>
         </header>
         <div className="content">
-          <h1>  </h1>
+       
           <p>Del 18 de junio al 13 de julio</p> 
           <img src={`${process.env.PUBLIC_URL}/GE007.webp`} alt="GoldenEye" className="main-image" />
           <button onClick={() => navigate('/segunda')} className="btn">Más información</button>
         </div>
+        <div className="circle-box"> </div>
       </div>
+
     );
   };
 

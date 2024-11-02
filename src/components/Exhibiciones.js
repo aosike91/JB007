@@ -49,7 +49,8 @@ const Exhibiciones = () => {
                     </div>
                     <div className="text"> James Bond 007 Museum Nybro Sweden Visit Worlds Only Hovercraft Museum Lee-on-the-Solent England
                     DIE ANOTHER DAY (2002)  Pierce Brosnan in James Bond 007 Museum</div>
-                </div>
+                </div> 
+                
                 {/* Nueva columna derecha */}
                 <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion6.jpg`)}>
                     <div className="circle">

@@ -1,0 +1,13 @@
+#circle-box{ 
+    width: 100px; /* Ancho del círculo */
+    height: 100px; /* Alto del círculo */
+    background-color: lightblue; /* Color de fondo */
+    border-radius: 50%; /* Esto hace que sea un círculo */
+    display: flex; /* Centrar contenido */
+    align-items: center; /* Centrar contenido verticalmente */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    text-align: center; /* Centrar texto */
+}
+
+
+

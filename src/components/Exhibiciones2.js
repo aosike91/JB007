@@ -58,7 +58,7 @@ const Exhibiciones2 = () => {
                     <div className="text">NINTENDO 64 GOLDENEYE play Nintendo 64 Goldeneye James Bond 007 Museum in Nybro SwedenY</div>
                 </div>
 
-                {/* Columna existente */}
+         
                 <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion11.jpg`)}>
                     <div className="circle">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion11.jpg`} alt="Exhibición 11" />
@@ -75,7 +75,7 @@ const Exhibiciones2 = () => {
                 </div>
             </div>
             <div className="row">
-                {/* Columna existente */}
+            
                 <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion13.jpg`)}>
                     <div className="circle">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion13.jpg`} alt="Exhibición 3" />
