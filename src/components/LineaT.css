@@ -1,155 +1,80 @@
-.container {
+.carousel-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  margin-top: 170px;
+  margin-left: 100px;
+  color: white;
+}
+
+.carousel-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: orange;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 190px;
-  margin-bottom: 230px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carousel-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.left {
+  position: absolute;
+  margin-left: -10000px; /* Espaciado hacia la izquierda */
+}
+
+.carousel-button.right {
+  position: absolute;
+  right: 150px; /* Espaciado hacia la derecha */
 }
 
 .zigzag-container {
   display: flex;
-  gap: 50px; /* Espacio entre cada elemento */
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  flex-grow: 1;
 }
 
 .zigzag-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  width: 200px;
+  text-align: center;
 }
 
-/* Estilo para alternar la posición de cada elemento */
-.zigzag-item:nth-child(odd) {
-  transform: translateY(-120px); /* Mueve los elementos impares hacia arriba */
+.image-time-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.zigzag-item:nth-child(even) {
-  transform: translateY(120px); /* Mueve los elementos pares hacia abajo */
-}
-
-/* Estilo para la caja de la imagen redonda */
-.image-time-box {
-  width: 190px;
-  height: 200px; 
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 10px; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  margin-bottom:-20px; 
-  border:0px solid #f08b33;
-  
-
-}
-.image-time-box img{
-  width: 100%; /* Ajusta la imagen al tamaño del círculo */
-  height: 100%; /* Hace que la imagen ocupar todo el círculo */
-  object-fit: cover; 
-  z-index: 2; 
-  position: relative; 
-}
-
-/* Estilo para la caja de texto en forma de hexágono */
 .time-box {
-  width: 190px;
-  height: 100px;
-  background-color: #f08b33;
-  display: flex;
-  margin-top: 100pxs;
-  justify-content: center;
-  align-items: center;
-  margin-top: -150px;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  padding-top: 100px;
-  clip-path: polygon(50% 45%, 100% 25%,100% 80%, 50% 100%, 0% 80%, 0% 25%);
-  z-index: 1;
-}
-.time-box:hover{
- height: 175px;
-}
-.time-box--gooey {
-  color: #ff1010;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: 0;
-  position: relative;
-  transition: all 700ms ease;
-}
-/* Hacer que el texto sea invisible por defecto */
-.time-box--gooey .time-box__text {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-/* Mostrar el texto al pasar el mouse por encima */
-.time-box:hover .time-box__text {
-  opacity: 1;
-  visibility: visible;
-}
-
-.time-box--gooey .time-box__blobs {
-  height: 100%;
-  filter: url(#goo);
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: -3px;
-  right: -1px;
-  z-index: -1;
-}
-
-.time-box--gooey .time-box__blobs div {
-  background-color: rgb(75, 75, 75);
-  width: 34%;
-  height: 100%;
-  border-radius: 100%;
-  position: absolute;
-  transform: scale(1.4) translateY(125%) translateZ(0);
-  transition: all 600ms ease;
-}
-
-.time-box--gooey .time-box__blobs div:nth-child(1) {
-  left: -5%;
-}
-
-.time-box--gooey .time-box__blobs div:nth-child(2) {
-  left: 30%;
-  transition-delay: 60ms;
-}
-
-.time-box--gooey .time-box__blobs div:nth-child(3) {
-  left: 66%;
-  transition-delay: 25ms;
-}
-
-.time-box--gooey:hover {
-  color: #fff;
-}
-
-.time-box--gooey:hover .time-box__blobs div {
-  transform: scale(1.4) translateY(0) translateZ(0);
-}
-
-/* Flecha conectando los cuadros */
-.arrow {
-  position: absolute;
-  top: 100%;
-  width: 0;
-  height: 20px;
-  border-left: 2px dotted black;
   margin-top: 10px;
-  z-index: 0;
 }
 
-/* Flecha animada */
-.arrow::after {
-  content: '→';
-  font-size: 20px;
-  color: #333;
-  position: absolute;
-  top: -5px;
-  right: -5px;
+.time-box__text {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
