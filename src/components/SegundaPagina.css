@@ -227,7 +227,33 @@ q {
   max-height: 80%;
   border: 3px solid white;
 }
+.contacto-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+  z-index: 1000; /* Asegura que esté encima de todo */
+  visibility: hidden; /* Ocultar inicialmente */
+  opacity: 0; /* Hacerlo invisible */
+  transition: opacity 0.5s ease, visibility 0.50s ease; /* Transiciones suaves */
+}
 
+.contacto-visible {
+  visibility: visible; /* Hacer visible cuando se muestre */
+  opacity: 1; /* Hacerlo opaco */
+}
+
+.contacto-imagen {
+  max-width: 80%;
+  max-height: 80%;
+  border: 3px solid white;
+}
 .volver-boton {
   margin-top: 20px;
   padding: 10px 20px;

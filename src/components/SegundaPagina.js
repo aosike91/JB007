@@ -5,6 +5,7 @@ import './LineaT.css';
 
 const SegundaPagina = () => {
   const [mapaVisible, setMapaVisible] = useState(false);
+  const [contactoVisible, setContactoVisible] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0); // Estado para controlar la línea de tiempo
   const navigate = useNavigate();
 
@@ -16,6 +17,14 @@ const SegundaPagina = () => {
     setMapaVisible(false);
   };
 
+  
+  const mostrarContacto = () => {
+    setContactoVisible(true);
+  };
+
+  const ocultarContacto = () => {
+    setContactoVisible(false);
+  };
   const scrollToLineaT = () => {
     const section = document.getElementById("LineaT");
     if (section) {
@@ -99,14 +108,16 @@ const SegundaPagina = () => {
               </Link>
             </li>
             <li>
+              <Link to="/tienda" className="custom-link">
               <img src={`${process.env.PUBLIC_URL}/icono-tienda.png`} alt="Tienda" className="nav-icon" />
               TIENDA
+              </Link>
             </li>
-            <li>
-              <Link to="/tercera" className="custom-link">
+            <li onClick={mostrarContacto}>
+            
                 <img src={`${process.env.PUBLIC_URL}/icono-contacto.png`} alt="Contacto" className="nav-icon" />
                 CONTACTO
-              </Link>
+    
             </li>
           </ul>
         </nav>
@@ -133,10 +144,10 @@ const SegundaPagina = () => {
       <div id="LineaT" className="linea-tiempo-seccion">
         <h3>Línea de tiempo</h3>
         <div className="carousel-container">
-        <button onClick={nextPage} className="carousel-button right">
-            &#8592;
-          </button>
-          <div className="zigzag-container">
+  <button onClick={prevPage} className="carousel-button left">
+    &#8592;
+  </button>
+  <div className="zigzag-container">
             {visibleBoxes.map((item, index) => (
               <div className="zigzag-item" key={index}>
                 <div className="image-time-box">
@@ -155,11 +166,11 @@ const SegundaPagina = () => {
                 </div>
               </div>
             ))}
-          </div>
-          <button onClick={nextPage} className="carousel-button right">
-            &#8594;
-          </button>
-        </div>
+           </div>
+  <button onClick={nextPage} className="carousel-button right">
+    &#8594;
+  </button>
+</div>
 
         {/* Filtro SVG para el efecto "gooey" */}
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style={{ display: "none" }}>
@@ -183,7 +194,13 @@ const SegundaPagina = () => {
         <img src="mapa.jpg" alt="Mapa" className="mapa-imagen" />
         <button onClick={ocultarMapa} className="volver-boton">Volver</button>
       </div>
+
+      <div className={`contacto-overlay ${contactoVisible ? 'contacto-visible' : ''}`}>
+        <img src="contacto.png" alt="Contacto" className="contacto-imagen" />
+        <button onClick={ocultarContacto} className="volver-boton">Volver</button>
+      </div>
     </div>
+    
   );
 };
 

@@ -1,50 +1,24 @@
 .carousel-container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  width: 100%;
-  margin-top: 170px;
-  margin-left: 100px;
-  color: white;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-left: 70px;
 }
+
 
 .carousel-button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: orange;
-  border: none;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  color: black;
+  font-size: 2rem;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 0 1rem;
 }
 
-.carousel-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-}
 
-.carousel-button:active {
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-button.left {
-  position: absolute;
-  margin-left: -10000px; /* Espaciado hacia la izquierda */
-}
-
-.carousel-button.right {
-  position: absolute;
-  right: 150px; /* Espaciado hacia la derecha */
-}
 
 .zigzag-container {
   display: flex;
