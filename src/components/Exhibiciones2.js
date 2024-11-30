@@ -39,66 +39,66 @@ const Exhibiciones2 = () => {
     return (
         <div className="exhibiciones-container">
             <button onClick={() => navigate('/segunda')} className="regresar-button-ex">Página Principal</button>
-            <div className="row">
+            <div className="row1">
                 
                 {/* Nueva columna izquierda */}
                 
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion9.jpg`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion9.jpg`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion9.jpg`} alt="Exhibición 5" />
                     </div>
                     <div className="text"> James Bond 007 Museum Nybro Sweden Visit Worlds Only Hovercraft Museum Lee-on-the-Solent England
                     DIE ANOTHER DAY (2002)  Pierce Brosnan in James Bond 007 Museum</div>
                 </div>
                 {/* Nueva columna derecha */}
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion10.gif`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion10.gif`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion10.gif`} alt="Exhibición 6" />
                     </div>
                     <div className="text">NINTENDO 64 GOLDENEYE play Nintendo 64 Goldeneye James Bond 007 Museum in Nybro SwedenY</div>
                 </div>
 
          
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion11.jpg`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion11.jpg`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion11.jpg`} alt="Exhibición 11" />
                     </div>
                     <div className="text">BOLLINGER LAUNCH LIMITED EDITION 007 GIFT PACK Special Cuvée for the release of 
                     No Time To Die</div>
                 </div>
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion12.jpg`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion12.jpg`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion12.jpg`} alt="Exhibición 2" />
                     </div>
                     <div className="text">Izabella Scorupcos bikini from Goldeneye
                     Pierce Brosnan Izabella Scorupco</div>
                 </div>
             </div>
-            <div className="row">
+            <div className="row1">
             
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion13.jpg`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion13.jpg`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion13.jpg`} alt="Exhibición 3" />
                     </div>
                     <div className="text">The official snowmobile of James Bond ski-doo MX Z-REV</div>
                 </div>
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion14.jpg`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion14.jpg`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion14.jpg`} alt="Exhibición 4" />
                     </div>
                     <div className="text">SE-LGK Cessna plane F172H Reims Aviation Skyhawk 1969  James Bond 007 Museum Nybro Sweden</div>
                 </div>
 
                 {/* Nueva columna izquierda */}
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion15.jpg`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion15.jpg`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion15.jpg`} alt="Exhibición 7" />
                     </div>
                     <div className="text">The shorts worn by James Bond (Daniel Craig) in the film SkyFall Orlebar Brown Setter Sky swimming shorts.  </div>
                 </div>
                 {/* Nueva columna derecha */}
-                <div className="box" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion16.jpg`)}>
-                    <div className="circle">
+                <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion16.jpg`)}>
+                    <div className="circle1">
                         <img src={`${process.env.PUBLIC_URL}/exhibicion16.jpg`} alt="Exhibición 8" />
                     </div>
                     <div className="text">
