@@ -7,7 +7,6 @@ const SegundaPagina = () => {
   const [mapaVisible, setMapaVisible] = useState(false);
   const [contactoVisible, setContactoVisible] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0); // Estado para controlar la línea de tiempo
-  const navigate = useNavigate();
 
   const mostrarMapa = () => {
     setMapaVisible(true);
@@ -192,12 +191,12 @@ const SegundaPagina = () => {
       {/* Mapa */}
       <div className={`mapa-overlay ${mapaVisible ? 'mapa-visible' : ''}`}>
         <img src="mapa.jpg" alt="Mapa" className="mapa-imagen" />
-        <button onClick={ocultarMapa} className="volver-boton">Volver</button>
+        <button onClick={ocultarMapa} className="btn3">Volver</button>
       </div>
 
       <div className={`contacto-overlay ${contactoVisible ? 'contacto-visible' : ''}`}>
         <img src="contacto.png" alt="Contacto" className="contacto-imagen" />
-        <button onClick={ocultarContacto} className="volver-boton">Volver</button>
+        <button onClick={ocultarContacto} className="btn3">Volver</button>
       </div>
     </div>
     

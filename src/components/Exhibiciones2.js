@@ -38,7 +38,7 @@ const Exhibiciones2 = () => {
 
     return (
         <div className="exhibiciones-container">
-            <button onClick={() => navigate('/segunda')} className="regresar-button-ex">Página Principal</button>
+            <button onClick={() => navigate('/segunda')} className="btn3">Página Principal</button>
             <div className="row1">
                 
                 {/* Nueva columna izquierda */}

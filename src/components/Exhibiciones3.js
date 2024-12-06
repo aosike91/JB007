@@ -40,7 +40,7 @@ const Exhibiciones3 = () => {
     return (
       
         <div className="exhibiciones-container">
-             <button onClick={() => navigate('/segunda')} className="regresar-button-ex">Página Principal</button>
+             <button onClick={() => navigate('/segunda')} className="btn3">Página Principal</button>
             <div className="row1">
                 {/* Nueva columna izquierda */}
                 <div className="box1" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/exhibicion5.jpg`)}>
